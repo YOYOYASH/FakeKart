@@ -1,0 +1,91 @@
+<app-header></app-header>
+<div class="homecontainer">
+    <div class="productcontainer">
+        <div class="top">
+
+            <h4>ELECTRONICS</h4>
+            <div class="view-more" routerLink="/electronics">View More</div>
+        </div>
+        
+        <div class="row">
+           
+            <ng-container *ngFor="let item of electronics.slice(0,5) ">
+                <div class="card col-md-3" style="width: 18rem;">
+                    <img routerLink="{{item.id}}" class="card-img-top" src="{{item.image}}" alt="Card image cap">
+                    <div class="card-body">
+                      <a routerLink="{{item.id}}"><h5 class="card-title" style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.title}}</h5></a>
+                      <p class="card-text" style="font-weight: bold;"><strong>Price:</strong>${{item.price}}</p>
+                     
+                    </div>
+                  </div>
+            </ng-container>
+           
+        </div>
+    </div>
+    <div class="productcontainer">
+        <div class="top">
+
+            <h4>jewellery</h4>
+            <div class="view-more">View More</div>
+        </div>
+        
+        <div class="row">
+           
+            <ng-container *ngFor="let item of jewellery.slice(0,5) ">
+                <div class="card col-md-3" style="width: 18rem;">
+                    <img class="card-img-top" src="{{item.image}}" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title" style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.title}}</h5>
+                      <p class="card-text" style="font-weight: bold;"><strong>Price:</strong>${{item.price}}</p>
+                    </div>
+                  </div>
+            </ng-container>
+           
+        </div>
+    </div>
+    <div class="productcontainer">
+        <div class="top">
+
+            <h4>Men's Clothing</h4>
+            <div class="view-more">View More</div>
+        </div>
+        
+        <div class="row">
+           
+            <ng-container *ngFor="let item of menclothing.slice(0,5) ">
+                <div class="card col-md-3" style="width: 18rem;">
+                    <img class="card-img-top" src="{{item.image}}" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title" style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.title}}</h5>
+                      <p class="card-text" style="font-weight: bold;"><strong>Price:</strong>${{item.price}}</p>
+                      
+                    </div>
+                  </div>
+            </ng-container>
+           
+        </div>
+    </div>
+    <div class="productcontainer">
+        <div class="top">
+
+            <h4>Women's clothing</h4>
+            <div class="view-more">View More</div>
+        </div>
+        
+        <div class="row">
+           
+            <ng-container *ngFor="let item of womenclothing.slice(0,5) ">
+                <div class="card col-md-3" style="width: 18rem;">
+                    <img class="card-img-top" src="{{item.image}}" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title" style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.title}}</h5>
+                      <p class="card-text" style="font-weight: bold;"><strong>Price:</strong>${{item.price}}</p>
+                      
+                    </div>
+                  </div>
+            </ng-container>
+           
+        </div>
+    </div>
+    </div>
+

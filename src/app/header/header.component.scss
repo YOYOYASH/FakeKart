@@ -1,0 +1,17 @@
+li{
+    list-style: none;
+    display: inline-block;
+}
+a{
+    color: aliceblue;
+    padding: 10px;
+    text-decoration: none;
+}
+a:hover{
+   color: red;
+   transform: scale(1.1);
+}
+i{
+    padding-top: 5px;
+    cursor: pointer;
+}

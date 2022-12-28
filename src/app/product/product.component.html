@@ -1,0 +1,16 @@
+<app-header></app-header>
+<div class="container-fluid">
+    <div class="product">
+        <div class="gallery">
+            <img src="{{product.image }}" alt="">
+        </div>
+        <div class="details">
+               <h5>{{product.title}}</h5>
+               <p>{{product.description.slice(0,150)}}...</p>
+               <p><strong>Price: </strong>${{product.price}}</p>
+               <p><strong>Rating: </strong>{{product.rating.rate}}/5</p>
+               <br>
+               <button id="btn" class="btn btn-primary" (click)=AddToCart(product)>Add To Cart</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,38 @@
+.card img{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 1px;
+    transition: 0.3s ease-in-out;
+ }
+ .card img:hover{
+   transition: 0.3s ease-in-out;
+   transform: scale(1.1);
+   cursor: pointer;
+ }
+ .card{
+  padding: 20px;
+  margin: 20px 20px 0px 20px;
+  display: flex;
+  
+  justify-content: center;
+   box-shadow: -10px 5px 10px 10px rgba(0,0,0,0.1);
+ }
+ .container-fluid{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  
+  
+  background-color: lightblue;
+}
+.row{
+  height: 75vh;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+a:hover{
+  color: lightblue;
+  transform: scale(1.1);
+}

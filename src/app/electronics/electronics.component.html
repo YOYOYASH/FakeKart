@@ -1,0 +1,20 @@
+<app-header></app-header>
+
+  <div class="container-fluid">
+
+    <div class="row">
+      
+      <ng-container *ngFor="let item of electronics ">
+        <div class="card col-md-3" style="width: 18rem;">
+          <img routerLink="{{item.id}}" class="card-img-top" src="{{item.image}}" alt="Card image cap">
+          <div class="card-body">
+                <a routerLink="{{item.id}}"><h5 class="card-title" style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.title}}</h5></a>
+                <p class="card-text" style="font-weight: bold;"><strong>Price:</strong>${{item.price}}</p>
+                
+              </div>
+            </div>
+          </ng-container>
+          
+        </div>
+        
+      </div>
